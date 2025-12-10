@@ -1,0 +1,2341 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* 스크롤 막기 */
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    transition: transform 0.6s ease;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.s1 {
+    background-color: #424242;
+    color: #e3e3e3;
+}
+
+.s2 {
+    background-color: #e3e3e3;
+    color: #424242;
+}
+
+.s3 {
+    background-color: #424242;
+    color: #e3e3e3;
+}
+
+.s4 {
+    background-color: #e3e3e3;
+    color: #424242;
+}
+
+.s5 {
+    background-color: #424242;
+    color: #e3e3e3;
+}
+
+.pp {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+}
+
+/*여기 아래꺼 꾸미기*/
+.cursorstart {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cursorstartspan {
+    color: #e3e3e3;
+}
+
+.cursorstartspan.off {
+    color: transparent;
+}
+
+.cursorstart>h1 {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.7px;
+    line-height: 40px;
+}
+
+.sectiononeupdrag {
+    width: 200px;
+    height: 16px;
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 16px;
+}
+
+.portsection {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.iryuk_part {
+    width: 1400px;
+    height: calc(100vh - 240px);
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.iryuk_partbox {
+    width: 680px;
+    height: calc(100vh - 240px);
+}
+
+.iryuk_soge {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 160%;
+    margin-bottom: 40px;
+}
+
+.iryuk_partbox_img {
+    width: 216px;
+    height: 216px;
+    border: 1px solid red;
+}
+
+.backyong {
+    background-color: #4d4d4d;
+    width: calc(50vw);
+    height: calc(100vh - 120px);
+    border-bottom-right-radius: 160px;
+}
+
+.backyongtwo {
+    background-color: #d8d8d8;
+    width: calc(50vw);
+    height: calc(100vh - 120px);
+    border-bottom-right-radius: 160px;
+}
+
+.portone {
+    width: 10vw;
+    height: 20vh;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    margin: 0px 20px;
+    box-shadow: 1px 1px 15px 0px black;
+    color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portone>object {
+    height: 10vh;
+    width: auto;
+    pointer-events: none;
+}
+
+.porttwo {
+    width: 10vw;
+    height: 20vh;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    margin: 0px 20px;
+    box-shadow: 1px 1px 15px 0px black;
+    color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.porttwo>object {
+    height: auto;
+    width: 8vw;
+    pointer-events: none;
+}
+
+.portthree {
+    width: 10vw;
+    height: 20vh;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    margin: 0px 20px;
+    box-shadow: 1px 1px 15px 0px black;
+    color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portthree>object {
+    height: 10vh;
+    width: auto;
+    pointer-events: none;
+}
+
+.portfour {
+    width: 10vw;
+    height: 20vh;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    margin: 0px 20px;
+    box-shadow: 1px 1px 15px 0px black;
+    color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfour>object {
+    height: 10vh;
+    width: auto;
+    pointer-events: none;
+}
+
+.portfive {
+    width: 10vw;
+    height: 20vh;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    margin: 0px 20px;
+    box-shadow: 1px 1px 15px 0px black;
+    color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfive>object {
+    height: auto;
+    width: 8vw;
+    pointer-events: none;
+}
+
+.portsix {
+    width: 10vw;
+    height: 20vh;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    margin: 0px 20px;
+    box-shadow: 1px 1px 15px 0px black;
+    color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portsix>object {
+    height: auto;
+    width: 8vw;
+    pointer-events: none;
+}
+
+.portsection_two {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 아래거들 클릭 펑션으로 크게 나왔다가 이동하게 하기 */
+
+.portplus_one {
+    width: 10vw;
+    height: 20vh;
+    color: #e3e3e3;
+    border-radius: 10px;
+    margin: 0px 20px;
+    box-shadow: 1px 1px 15px 0px black;
+    background-color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.portplus_two {
+    width: 10vw;
+    height: 20vh;
+    color: #e3e3e3;
+    border-radius: 10px;
+    margin: 0px 20px;
+    box-shadow: 1px 1px 15px 0px black;
+    background-color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.portplus_three {
+    width: 10vw;
+    height: 20vh;
+    color: #e3e3e3;
+    border-radius: 10px;
+    margin: 0px 20px;
+    box-shadow: 1px 1px 15px 0px black;
+    background-color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/*감사합니다.*/
+.s5>h1 {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.7px;
+    line-height: 40px;
+}
+
+/* 포트폴리오 1 세부 */
+
+.portonesebu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+    z-index: 3;
+    color: #424242;
+    background-color: #e3e3e3;
+}
+
+.portonesebu_box {
+    width: 100vw;
+    overflow-y: auto;
+}
+
+.portonesebu h2 {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    line-height: 20px;
+}
+
+.portonesebuclose {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    cursor: pointer;
+}
+
+.portonesebuclose>p {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #424242;
+}
+
+.portoneheader_object {
+    width: auto;
+    height: 150px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.portoneheader_soge {
+    width: 680px;
+}
+
+.portoneheader_soge>p {
+    font-family: 'Pretendard';
+    width: 680px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 160%;
+    color: #424242;
+    margin: 0;
+}
+
+.portoneheader_end {
+    width: 100vw;
+    height: 80px;
+    overflow: hidden;
+}
+
+.object_train {
+    display: flex;
+    width: 200vw;
+    animation: moveleft 17s linear infinite;
+}
+
+@keyframes moveleft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.object_train>object {
+    width: 100vw;
+    height: auto;
+}
+
+.portonelogo_header {
+    width: 1400px;
+    height: 40px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.portonelogo_header>object {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.portonelogo_header>h2 {
+    margin: 0;
+    transform: translateY(-0.2em);
+}
+
+.portonelogo_img {
+    width: 1400px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.portonelogo_img>object {
+    width: auto;
+    height: 150px;
+}
+
+.portonelogo_soge {
+    width: 100vw;
+    height: 16px;
+    display: flex;
+}
+
+.portonelogo_soge>object {
+    width: 16px;
+    height: 16px;
+    margin-left: 40px;
+}
+
+.portonelogo_soge>p {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 16px;
+    color: #424242;
+    margin: 0;
+}
+
+.for_portone_homepagelook {
+    width: 1400px;
+    height: 36px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.portone_homepagelook {
+    width: 131.66px;
+    height: 36px;
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.portone_homepagelook>a {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 14px;
+    color: #424242;
+    margin: 0;
+}
+
+.portonemain {
+    width: 100vw;
+    height: 650px;
+    position: relative;
+}
+
+.portonemain>h2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.portoneslide {
+    width: 1400px;
+    height: 450px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+
+.portonegasiset {
+    width: 100vw;
+    height: 800px;
+    background-color: #fff7ee;
+    position: relative;
+    border: 1px solid red;
+}
+
+.portonegasiset>h2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.portonegasi {
+    width: 677.5px;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+
+.portonegasi>h2 {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    color: #3e9dac;
+    margin-bottom: 32px;
+}
+
+.portonegasili>li {
+    display: flex;
+    justify-content: space-between;
+    line-height: 200%;
+    border-bottom: 1px solid #3e9dac;
+    color: #3e9dac;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.portonegasifirstsp {
+    width: 100px;
+    text-align: left;
+}
+
+.portonegasisetsoge {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    position: absolute;
+    top: 440px;
+    left: 40px;
+}
+
+/*포트폴리오 1 일정*/
+.portoneilgong {
+    width: 100vw;
+    height: 700px;
+    background-color: #fff7ee;
+    position: relative;
+    border: 1px solid red;
+}
+
+.portoneilgong>h2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.potronilgongtable {
+    width: 677.5px;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+
+.potronilgongtable>h2 {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    color: #3e9dac;
+    margin-bottom: 32px;
+}
+
+.portoneilgongsoge {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    position: absolute;
+    top: 520px;
+    left: 40px;
+}
+
+/*테이블*/
+.portoneilgongsecondtr {
+    width: 640px;
+    height: 330px;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+table.portoneilgongsecondtr {
+    border-collapse: collapse;
+}
+
+table.portoneilgongsecondtr td {
+    border: 0.5px solid #3e9dac;
+}
+
+.portoneilgongsecondtr tr:nth-child(1) {
+    height: 22px;
+}
+
+.portoneilgongsecondtr tr:nth-child(1)>td {
+    border: 0.5px solid #eaeaea;
+    background-color: #3e9dac;
+    color: #eaeaea;
+}
+
+.portoneilgongsecondtr tr:nth-child(n + 2) {
+    height: 44px;
+}
+
+.portoneilgongtoday {
+    background-color: #ff8f8f44;
+}
+
+/* 하단 영역 */
+.portonefooterset {
+    width: 100vw;
+    height: 500px;
+    position: relative;
+}
+
+.portonefooterset>h2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.portonefooter {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    width: 1400px;
+    height: 50px;
+    color: #3e9dac;
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#portonefooterfirst {
+    margin-left: 10px;
+}
+
+#portonefooterthird {
+    margin-right: 10px;
+}
+
+.portone_img_part_header {
+    width: 1400px;
+    height: 90px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+.portone_img_part_header_inner {
+    width: 1400px;
+    height: 90px;
+    position: absolute;
+    top: -90px;
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.img_part_textpp{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 100%;
+    color: #424242;
+    margin: 0;
+}
+
+.portone_img_part_header:hover>.portone_img_part_header_inner {
+    top: 0px;
+}
+
+
+.portone_img_part_main_banner {
+    width: 1400px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: azure;
+}
+
+.portone_img_part_main_banner_inner {
+    width: 1400px;
+    height: 450px;
+    position: absolute;
+    top: -450px;
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.portone_img_part_main_banner:hover>.portone_img_part_main_banner_inner {
+    top: 0px;
+}
+
+.portone_img_part_gasiapn_and_hangsailgong {
+    width: 1400px;
+    height: 336px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.portone_img_part_gasipan {
+    width: 700px;
+    height: 336px;
+    position: relative;
+    overflow: hidden;
+    background-color: bisque;
+}
+
+.portone_img_part_gasipan_inner {
+    width: 700px;
+    height: 336px;
+    position: absolute;
+    left: -700px;
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.portone_img_part_gasipan:hover>.portone_img_part_gasipan_inner {
+    left: 0px;
+}
+
+.portone_img_part_hangsailgong {
+    width: 700px;
+    height: 336px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(202, 155, 98);
+}
+
+.portone_img_part_hangsailgong_inner {
+    width: 700px;
+    height: 336px;
+    position: absolute;
+    left: 700px;
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.portone_img_part_hangsailgong:hover>.portone_img_part_hangsailgong_inner {
+    left: 0px;
+}
+
+.portone_img_part_munhwa_hangsa {
+    width: 1400px;
+    height: 421px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: burlywood;
+}
+
+.portone_img_part_munhwa_hangsa_inner {
+    width: 1400px;
+    height: 421px;
+    position: absolute;
+    top: 421px;
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.portone_img_part_munhwa_hangsa:hover>.portone_img_part_munhwa_hangsa_inner {
+    top: 0px;
+}
+
+.portone_img_part_idal_dosuh {
+    width: 1400px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+}
+
+.portone_img_part_idal_dosuh_inner {
+    width: 1400px;
+    height: 350px;
+    position: absolute;
+    top: 350px;
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.portone_img_part_idal_dosuh:hover>.portone_img_part_idal_dosuh_inner {
+    top: 0px;
+}
+
+.portone_img_part_footer {
+    width: 1400px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: brown;
+}
+
+.portone_img_part_footer_inner {
+    width: 1400px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.portone_img_part_footer:hover>.portone_img_part_footer_inner {
+    top: 0px;
+}
+
+.homepage_shape_four {
+    width: calc(100vw - 160px);
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.homepage_shape_four>img {
+    width: 100%;
+    height: auto;
+}
+
+/* 여기까지 수정하기 */
+.portonesebu.on {
+    display: flex;
+}
+
+/* 2번 세부용 */
+.porttwosebu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 3;
+    color: #424242;
+    background-color: #e3e3e3;
+}
+
+.porttwosebu h2 {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+
+.porttwosebuclose {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    cursor: pointer;
+}
+
+.porttwosebuclose>p {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #424242;
+}
+
+.porttwoheader_logo {
+    width: auto;
+    height: 70px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.porttwoheader_logotwo {
+    width: auto;
+    height: 50px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.porttwoheader_soge {
+    width: 100vw;
+    display: flex;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.porttwoheader_soge>p {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 160%;
+    color: #424242;
+    margin: 0;
+    transform: translateY(-0.2em);
+}
+
+.porttwomenu {
+    width: 100vw;
+    height: 500px;
+    position: relative;
+}
+
+.porttwomenu>h2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.porttwomenu_mainmenu {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    display: flex;
+    justify-content: center;
+    border: 0.5px solid #f76670;
+}
+
+.porttwomenu_mainmenu>li {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    /* 수정하기
+    background-color: 넣기; */
+}
+
+.porttwomenu_mainmenu>li.active {
+    color: #f76670;
+}
+
+.portwomenumouse {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    position: absolute;
+    margin: 0;
+    left: 360px;
+    top: 100px;
+}
+
+.porttwomenusoge {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    position: absolute;
+    top: 140px;
+    left: 40px;
+}
+
+.porttwomainimage {
+    width: 100vw;
+    height: 900px;
+    position: relative;
+}
+
+.porttwomainimage>h2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.porttwomainimage>img {
+    width: 1400px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+
+.porttwomain_mungu {
+    position: absolute;
+    top: 115px;
+    left: 75px;
+    z-index: 2;
+    font-size: 21px;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 21px;
+}
+
+.porttwomainsoge {
+    position: absolute;
+    top: 620px;
+    left: 40px;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 16px;
+}
+
+.porttwoslideproduct {
+    width: 100vw;
+    height: 640px;
+    background-color: rgb(178, 255, 195);
+    position: relative;
+}
+
+.porttwoslideproduct>h2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.porttwosinnyum {
+    width: 100vw;
+    height: 500px;
+    position: relative;
+}
+
+.porttwosinnyum>h2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.porttwosinnyumdiv {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    width: 1400px;
+    height: 300px;
+}
+
+.porttwosinnyumdiv>p {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    font-size: 21px;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 160%;
+    color: #e3e3e3;
+    z-index: 2;
+}
+
+.porttwosinnyumdiv_blackopa {
+    position: absolute;
+    width: 1400px;
+    height: 300px;
+    background-color: #333333;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.porttwosinnyumdiv>img {
+    width: 1400px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.porttwosinnyumsoge {
+    position: absolute;
+    top: 420px;
+    left: 40px;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 16px;
+}
+
+.porttwofooterset {
+    width: 100vw;
+    height: 500px;
+    background-color: rgb(82, 161, 62);
+    position: relative;
+}
+
+.porttwofooterset>h2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.porttwosebu.on {
+    display: flex;
+}
+
+/* 3번 세부용 */
+.portthreesebu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e3e3e3;
+    display: none;
+    z-index: 3;
+    flex-direction: column;
+}
+
+.portthreesebu h2 {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    color: #424242;
+}
+
+.portthreesebuclose {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+.portthreesebuclose>p {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #424242;
+}
+
+.portthreeheader_logo {
+    width: auto;
+    height: 150px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.portthreeheader_htwo {
+    margin: 0 0 20px 40px;
+}
+
+.portthree_mainpadoimg_wrap {
+    width: 1400px;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.portthree_mainpadoimg {
+    width: auto;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.portthreesebu.on {
+    display: flex;
+}
+
+/* 4번 세부용 */
+.portfoursebu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e3e3e3;
+    display: none;
+    z-index: 3;
+    flex-direction: column;
+}
+
+.portfoursebuclose {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+.portfoursebuclose>p {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #424242;
+}
+
+.portfourheader_logo {
+    width: auto;
+    height: 100px;
+    margin: 0 0 20px 40px;
+}
+
+.portfourheader_logotwo {
+    width: auto;
+    height: 150px;
+    margin: 0 0 20px 40px;
+}
+
+.portfoursebu.on {
+    display: flex;
+}
+
+/* 5번 세부용 */
+.portfivesebu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e3e3e3;
+    display: none;
+    z-index: 3;
+    flex-direction: column;
+}
+
+.portfivesebu h2 {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+
+.portfivesebuclose {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+.portfivesebuclose>p {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #424242;
+}
+
+.portfivesebu_mainlogo {
+    width: auto;
+    height: 100px;
+    margin: 0 0 20px 40px;
+}
+
+.portfivegrid_wrap {
+    width: 1400px;
+    height: 340px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.portfive_charactergrid {
+    width: 720px;
+    height: 340px;
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px 120px 120px;
+    grid-template-rows: 170px 170px;
+}
+
+/* 글자 16픽셀 위에 소개와 같이에, 마진 탑은 10픽셀 정도 */
+
+.portfive_characters {
+    width: 120px;
+    height: 146px;
+}
+
+.portfive_characters>object {
+    width: 100px;
+    height: 100px;
+}
+
+.portfive_characters_pp {
+    width: 100px;
+    height: 16px;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 160%;
+    color: #424242;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.portfive_characters_pp>p {
+    margin: 0;
+}
+
+.portfive_img_part {
+    width: 1286px;
+    height: 914px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.portfive_img_part_idal_front_part {
+    width: 402px;
+    height: 874px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfive_img_part_idal_front_part_inner {
+    width: 402px;
+    height: 874px;
+    position: absolute;
+    z-index: 2;
+    top: -874px;
+    background-color: #ffffffa8;
+    transition: all 0.6s ease 0s;
+}
+
+.portfive_img_part_idal_front_part_inner_ptitle {
+    width: 322px;
+    height: 52px;
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 160%;
+    color: #424242;
+    margin-top: 40px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.portfive_img_part_idal_front_part_inner_pbonmoon {
+    width: 322px;
+    height: 742px;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 160%;
+    color: #424242;
+    margin-left: 40px;
+}
+
+.portfive_img_part_idal_front_part>img {
+    width: 402px;
+    height: 874px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.portfive_img_part_idal_front_part:hover>.portfive_img_part_idal_front_part_inner {
+    top: 0px;
+}
+
+.portfivesebu.on {
+    display: flex;
+}
+
+/* 6번 세부용 */
+.portsixsebu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e3e3e3;
+    display: none;
+    z-index: 3;
+    flex-direction: column;
+}
+
+.portsixsebuclose {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+.portsixheader_logo {
+    width: auto;
+    height: 100px;
+    margin: 0 0 20px 40px;
+}
+
+.portsixsebuclose>p {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #424242;
+}
+
+.portsixsebu.on {
+    display: flex;
+}
+
+.port_mockup {
+    height: 500px;
+    width: auto;
+}
+
+.portone_mockup_and_title {
+    width: 1400px;
+    margin: 120px auto 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portone_mockup_and_titleparts {
+    width: 680px;
+    height: 500px;
+}
+
+.portone_keywords {
+    width: 1400px;
+    height: 140px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portone_keywords_part {
+    width: 680px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+}
+
+.portone_keyword_box {
+    width: 140px;
+    height: 140px;
+    position: relative;
+}
+
+.portone_keyword_box>img {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+}
+
+.portone_keyword_box>p {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 21px;
+    color: #424242;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portone_keyword_soge {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.portone_keyword_soge>p {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 160%;
+    color: #424242;
+    margin: 0;
+}
+
+.portone_mockup_and_titleparts>.portonelogo_header>object {
+    margin-left: 0px;
+}
+
+.portoneheader_soge_img {
+    width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.portoneheader_soge_img>p {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 160%;
+    color: #424242;
+    margin: 0;
+}
+
+.portone_mockup_and_titleparts>.portoneheader_soge {
+    width: 560px;
+    height: 500px;
+}
+
+.portone_colorone {
+    background-color: #3e9dac;
+    width: 140px;
+    height: 140px;
+}
+
+.portone_colortwo {
+    background-color: #fff7ee;
+    width: 140px;
+    height: 140px;
+    border: 0.5px solid #424242;
+}
+
+.porttwo_colorone {
+    background-color: #f76670;
+    width: 140px;
+    height: 140px;
+}
+
+.porttwo_colortwo {
+    background-color: #f4e9e9;
+    width: 140px;
+    height: 140px;
+    border: 0.5px solid #424242;
+}
+
+.portthree_colorone {
+    width: 140px;
+    height: 140px;
+    background-color: #78ddda;
+}
+
+.portthree_colortwo {
+    width: 140px;
+    height: 140px;
+    background-color: #eff3f3;
+    border: 0.5px solid #424242;
+}
+
+.portfour_colorone {
+    width: 140px;
+    height: 140px;
+    background-color: #d4d3e8;
+}
+
+.portone_keyword_box_dasi {
+    width: 140px;
+    height: 140px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.portone_keyword_box_dasi>p {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 21px;
+    color: #e3e3e3;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfour_colortwo {
+    width: 140px;
+    height: 140px;
+    background-color: #363642;
+}
+
+.portplus_one_sebu {
+    width: 960px;
+    height: 580px;
+    background-color: #e3e3e3;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px 0px black;
+}
+
+.portplus_one_sebu.on {
+    display: block;
+    z-index: 3;
+}
+
+
+.portplus_one_sebuclose {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    cursor: pointer;
+}
+
+.portplus_one_sebuclose>p {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #424242;
+}
+
+.portplus_two_sebu {
+    width: 960px;
+    height: 580px;
+    background-color: #e3e3e3;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px 0px black;
+}
+
+.portplus_two_sebu.on {
+    display: block;
+    z-index: 3;
+}
+
+
+.portplus_two_sebuclose {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    cursor: pointer;
+}
+
+.portplus_two_sebuclose>p {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #424242;
+}
+
+.portplus_three_sebu {
+    width: 960px;
+    height: 580px;
+    background-color: #e3e3e3;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px 0px black;
+}
+
+.portplus_three_sebu.on {
+    display: block;
+    z-index: 3;
+}
+
+
+.portplus_three_sebuclose {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    cursor: pointer;
+}
+
+.portplus_three_sebuclose>p {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #424242;
+}
+
+.portplus_part_photo_pp {
+    width: 880px;
+    height: 420px;
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portplus_part_photo {
+    width: 420px;
+    height: 420px;
+    background-color: beige;
+}
+
+.portplus_part_pp {
+    width: 420px;
+    height: 420px;
+    background-color: antiquewhite;
+}
+
+.fortsix_img_part_header {
+    width: 1200px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: aquamarine;
+}
+
+.fortsix_img_part_header_inner {
+    position: absolute;
+    width: 1200px;
+    height: 120px;
+    top: -120px;
+
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.fortsix_img_part_header:hover>.fortsix_img_part_header_inner {
+    top: 0px;
+}
+
+.fortsix_img_part_main_banner {
+    width: 1200px;
+    height: 480px;
+
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(102, 173, 150);
+}
+
+.fortsix_img_part_main_banner_inner {
+    width: 1200px;
+    height: 480px;
+    position: absolute;
+    top: -480px;
+    left: 0;
+
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.fortsix_img_part_main_banner:hover>.fortsix_img_part_main_banner_inner {
+    top: 0px;
+}
+
+.fortsix_img_part_idaljik_and_infor {
+    width: 1200px;
+    height: 480px;
+
+    margin: 0 auto;
+    display: flex;
+}
+
+.fortsix_img_part_idaljik {
+    width: 600px;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(226, 255, 179);
+}
+
+.fortsix_img_part_idaljik_inner {
+    width: 600px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    right: 600px;
+
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.fortsix_img_part_idaljik:hover>.fortsix_img_part_idaljik_inner {
+    right: 0;
+}
+
+.fortsix_img_part_infor {
+    width: 600px;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(255, 228, 179);
+}
+
+.fortsix_img_part_infor_inner {
+    width: 600px;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    right: -600px;
+
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.fortsix_img_part_infor:hover>.fortsix_img_part_infor_inner {
+    right: 0;
+}
+
+.fortsix_img_part_osinengil {
+    width: 1200px;
+    height: 464px;
+    margin: 0 auto;
+
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(139, 243, 139);
+}
+
+.fortsix_img_part_osinengil_inner {
+    width: 1200px;
+    height: 464px;
+    position: absolute;
+    top: 464px;
+    left: 0px;
+
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.fortsix_img_part_osinengil:hover>.fortsix_img_part_osinengil_inner {
+    top: 0;
+}
+
+.fortsix_img_part_footer {
+    width: 1200px;
+    height: 230px;
+
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+    background-color: rgb(114, 137, 172);
+}
+
+.fortsix_img_part_footer_inner {
+    width: 1200px;
+    height: 230px;
+    position: absolute;
+    top: 230px;
+    left: 0px;
+
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.fortsix_img_part_footer:hover>.fortsix_img_part_footer_inner {
+    top: 0px;
+}
+
+.portfour_img_part_header {
+    width: 1400px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+
+.portfour_img_part_header_inner {
+    width: 1400px;
+    height: 100px;
+    z-index: 2;
+    position: absolute;
+    top: -100px;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.portfour_img_part_header:hover>.portfour_img_part_header_inner {
+    top: 0px;
+}
+
+.portfour_img_part_main_banner {
+    width: 1400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(108, 184, 159);
+}
+
+.portfour_img_part_main_banner_inner {
+    width: 1400px;
+    height: 400px;
+    z-index: 2;
+    position: absolute;
+    top: -400px;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.portfour_img_part_main_banner:hover>.portfour_img_part_main_banner_inner {
+    top: 0px;
+}
+
+.portfour_img_part_event_shinchung_and_shinchung_list {
+    width: 1400px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.portfour_img_part_event_shinchung {
+    width: 700px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+.portfour_img_part_event_shinchung_inner {
+    width: 700px;
+    height: 400px;
+    z-index: 2;
+    position: absolute;
+    left: -700px;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.portfour_img_part_event_shinchung:hover>.portfour_img_part_event_shinchung_inner {
+    left: 0px;
+}
+
+.portfour_img_part_shinchung_list {
+    width: 700px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(197, 149, 87);
+}
+
+.portfour_img_part_shinchung_list_inner {
+    width: 700px;
+    height: 400px;
+    z-index: 2;
+    position: absolute;
+    left: 700px;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.portfour_img_part_shinchung_list:hover>.portfour_img_part_shinchung_list_inner {
+    left: 0px;
+}
+
+.portfour_img_part_ingijaefoom {
+    width: 1400px;
+    height: 230px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(151, 240, 129);
+}
+
+.portfour_img_part_ingijaefoom_inner {
+    width: 1400px;
+    height: 230px;
+    z-index: 2;
+    position: absolute;
+    top: 230px;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.portfour_img_part_ingijaefoom:hover>.portfour_img_part_ingijaefoom_inner {
+    top: 0px;
+}
+
+.portfour_img_part_sharp_findbread {
+    width: 1400px;
+    height: 580px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(184, 229, 173);
+}
+
+.portfour_img_part_sharp_findbread_inner {
+    width: 1400px;
+    height: 580px;
+    z-index: 2;
+    position: absolute;
+    top: 580px;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.portfour_img_part_sharp_findbread:hover>.portfour_img_part_sharp_findbread_inner {
+    top: 0px;
+}
+
+.portfour_img_part_footer {
+    width: 1400px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(187, 247, 255);
+}
+
+.portfour_img_part_footer_inner {
+    width: 1400px;
+    height: 200px;
+    z-index: 2;
+    position: absolute;
+    top: 200px;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.portfour_img_part_footer:hover>.portfour_img_part_footer_inner {
+    top: 0px;
+}
+
+.porttwo_img_part_header {
+    width: 1400px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.porttwo_img_part_header_inner {
+    width: 1400px;
+    height: 100px;
+    position: absolute;
+    top: -100px;
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.porttwo_img_part_header:hover>.porttwo_img_part_header_inner {
+    top: 0px;
+}
+
+.porttwo_img_part_main_banner {
+    width: 1400px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.porttwo_img_part_main_banner_inner {
+    width: 1400px;
+    height: 500px;
+    position: absolute;
+    top: -500px;
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.porttwo_img_part_main_banner:hover>.porttwo_img_part_main_banner_inner {
+    top: 0px;
+}
+
+.porttwo_img_part_event {
+    width: 1400px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.porttwo_img_part_event_inner {
+    width: 1400px;
+    height: 250px;
+    position: absolute;
+    top: -250px;
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.porttwo_img_part_event:hover>.porttwo_img_part_event_inner {
+    top: 0px;
+}
+
+.porttwo_img_part_thing_list {
+    width: 1400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.porttwo_img_part_thing_list_inner {
+    width: 1400px;
+    height: 300px;
+    position: absolute;
+    top: -300px;
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.porttwo_img_part_thing_list:hover>.porttwo_img_part_thing_list_inner {
+    top: 0px;
+}
+
+.porttwo_img_part_introduce {
+    width: 1400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.porttwo_img_part_introduce_inner {
+    width: 1400px;
+    height: 300px;
+    position: absolute;
+    top: 300px;
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.porttwo_img_part_introduce:hover>.porttwo_img_part_introduce_inner {
+    top: 0px;
+}
+
+.porttwo_img_part_youtube_video {
+    width: 1400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.porttwo_img_part_youtube_video_inner {
+    width: 1400px;
+    height: 400px;
+    position: absolute;
+    top: 400px;
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.porttwo_img_part_youtube_video:hover>.porttwo_img_part_youtube_video_inner {
+    top: 0px;
+}
+
+.porttwo_img_part_footer {
+    width: 1400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.porttwo_img_part_footer_inner {
+    width: 1400px;
+    height: 300px;
+    position: absolute;
+    top: 300px;
+    z-index: 2;
+    transition: all 0.6s ease 0s;
+    background-color: #ffffffa8;
+}
+
+.porttwo_img_part_footer:hover>.porttwo_img_part_footer_inner {
+    top: 0px;
+}
